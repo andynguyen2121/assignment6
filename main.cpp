@@ -102,9 +102,9 @@ double calcTax(double income, double rate) {
 
 // Part 3: Void Functions
 void printHeader(string courseTitle) {
-    cout << endl << "--------------------" << endl;
+    cout << endl << "----------------------------------------" << endl;
     cout << "          " << courseTitle << endl;
-    cout << endl << "--------------------" << endl;
+    cout << endl << "----------------------------------------" << endl;
 }
 
 void displayResult(string label, double value) {
@@ -149,3 +149,50 @@ void displayBox(int width, int height) {
 double calcShipping(double weight, double ratePerPound, double baseFee) {
     return baseFee + (weight * ratePerPound);
 }
+
+/* Inputs + Outputs
+
+@andynguyen2121 ➜ /workspaces/assignment6 (main) $ g++ main.cpp 
+@andynguyen2121 ➜ /workspaces/assignment6 (main) $ ./a.out 
+
+Math Summary for x = 9.75
+Square root: 3.12
+x^3: 926.86
+Ceiling: 10.00
+Floor: 9.00
+Absolute value of (x * -1): 9.75
+
+Math Summary for x = -4.20
+Square root: -nan
+x^3: -74.09
+Ceiling: -4.00
+Floor: -5.00
+Absolute value of (x * -1): 4.20
+Enter gross income: 50000
+Enter tax rate (e.g., 0.25): .22
+
+----------------------------------------
+          Tax Calculation Results
+
+----------------------------------------
+Tax Owed            : 11000.00
+Enter total seconds: 135
+Minutes             : 2.00
+Seconds             : 15.00
+countCalls has been called 1 time(s)
+countCalls has been called 2 time(s)
+countCalls has been called 3 time(s)
+countCalls has been called 4 time(s)
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+Shipping (all)      : 28.00
+Shipping (weight and rate): 25.00
+Shipping (weight only): 20.00
+
+*/
