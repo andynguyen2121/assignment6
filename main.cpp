@@ -17,6 +17,11 @@ void mathSummary(double x);
 double calcTax(double income, double rate);
 void printHeader(string courseTitle);
 void displayResult(string label, double value);
+
+/*
+minutes and seconds need to be references because the function needs to modify the variables, if they werent, results wouldnt be returned
+*/
+
 void convertTime(int totalSeconds, int &minutes, int &seconds);
 
 /* count calls 
@@ -118,6 +123,8 @@ void convertTime(int totalSeconds, int &minutes, int &seconds) {
     minutes = totalSeconds / 60;
     seconds = totalSeconds % 60;
 }
+
+
 
 // Part 5: Scope and Static Variables
 void countCalls() {
